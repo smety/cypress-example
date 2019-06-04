@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cypress example</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: Arial, 'sans-serif';
+      font-size: 15px;
+    }
+    
+    a {
+      display: block;
+    }
+    
+    .visible {
+      display: block;
+    }
+    
+    .container {
+      width: 980px;
+      margin: 30px auto 0 auto;
+    }
+    
+    .box {
+      padding: 20px 0
+    }
+  
+  </style>
+  <script>
+    window.addEventListener('load', () => {
+      document.getElementById('js-box-open').addEventListener('click', function (e) {
+        e.preventDefault();
+        document.getElementById('js-box').classList.toggle('visible')
+      })
+    })
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <a href="#" id="js-box-open">
+    Open / close box
+  </a>
+  
+  <div id="js-box" class="box" hidden>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit
+    esse cillum dolore eu fugiat nulla pariatur. Nulla quis diam. Fusce nibh. Itaque earum rerum hic tenetur a sapiente
+    delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+  </div>
+</div>
+
+</body>
+</html>

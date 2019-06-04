@@ -4,7 +4,7 @@
   "description": "Cypress.js boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/PilulkaDistribuce/cypress-boilerplate/issues"
   },
-  "homepage": "https://github.com/PilulkaDistribuce/cypress-boilerplate#readme"
+  "homepage": "https://github.com/PilulkaDistribuce/cypress-boilerplate#readme",
+  "dependencies": {
+    "cypress": "^3.3.1",
+    "express": "^4.17.1"
+  }
 }
