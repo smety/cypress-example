@@ -1,0 +1,23 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, 'sans-serif';
+    font-size: 15px;
+}
+
+a {
+    display: block;
+}
+
+.visible {
+    display: block;
+}
+
+.container {
+    width: 980px;
+    margin: 30px auto 0 auto;
+}
+
+.box {
+    padding: 20px 0
+}
