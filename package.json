@@ -4,7 +4,8 @@
   "description": "Cypress.js boilerplate",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "node index.js",
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",
