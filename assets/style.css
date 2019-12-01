@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -11,8 +15,15 @@ a {
     color: black;
 }
 
-.visible {
-    display: block;
+h1, h2 {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 22px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px dashed #DDD;
 }
 
 .container {
@@ -20,6 +31,9 @@ a {
     margin: 30px auto 0 auto;
 }
 
-.box {
-    padding: 20px 0
+.alert {
+    background: green;
+    color: white;
+    padding: 10px;
+    margin: 10px 0 0 0;
 }
