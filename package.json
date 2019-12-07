@@ -6,7 +6,9 @@
   "scripts": {
     "dev:server": "node index.js",
     "dev:kill": "kill-port --port 8022",
-    "cy:open": "cypress open"
+    "dev:restart": "npm run dev:kill && npm run dev:server",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",

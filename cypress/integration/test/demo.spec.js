@@ -19,8 +19,9 @@ context('Demo', () => {
     it('Test ajax', () => {
         cy.server()
         cy.visit('index.html')
-        cy.route('GET', 'https://jsonplaceholder.typicode.com/comments').as('getData')
+        cy.fixture('example.json').as('exampleJSON')
         cy.get('[data-cy=ajax-fetch-data]').click()
+        cy.route('GET', '/', '@exampleJSON')
         cy.get('[data-cy=ajax-fetch-alert]').should('be.visible')
     })
 })
