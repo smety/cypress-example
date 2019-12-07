@@ -4,7 +4,23 @@
   <meta charset="UTF-8">
   <title>Cypress example</title>
   <link rel="stylesheet" type="text/css" href="./assets/style.css">
-  <script src="assets/app.js" async defer></script>
+  <script>
+      window.addEventListener('load', function () {
+          document.getElementById('js-fetch-data').addEventListener('click', function (e) {
+              e.preventDefault();
+
+              fetch('https://jsonplaceholder.typicode.com/comments')
+                  .then(function () {
+                      document.getElementById('js-fetch-alert').style.display = 'block'
+                  })
+                  .catch(function (error) {
+                      console.warn(error);
+                  })
+          })
+
+      })
+
+  </script>
 </head>
 <body>
 <div class="container">
@@ -42,9 +58,8 @@
   <hr>
 
   <h2>Ajax</h2>
-  <a href="#" id="js-fetch-data-button" data-cy="ajax-fetch-data">Click me</a>
+  <a href="#" id="js-fetch-data" data-cy="ajax-fetch-data">Click me</a>
   <div id="js-fetch-alert" data-cy="ajax-fetch-alert" style="display: none;" class="alert">Ajax call: ok</div>
-  <div id="comment-list"></div>
 </div>
 </body>
 </html>
