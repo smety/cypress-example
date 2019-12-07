@@ -3,7 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <title>Cypress example</title>
-  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: Arial, 'sans-serif';
+      font-size: 15px;
+    }
+
+    a {
+      display: block;
+      padding: 10px 0;
+      color: black;
+    }
+
+    h1, h2 {
+      padding: 0;
+      margin: 0 0 20px 0;
+      font-size: 22px;
+    }
+
+    hr {
+      border: 0;
+      border-bottom: 1px dashed #DDD;
+    }
+
+    .container {
+      width: 980px;
+      margin: 30px auto 0 auto;
+    }
+
+    .alert {
+      background: green;
+      color: white;
+      padding: 10px;
+      margin: 10px 0 0 0;
+    }
+  </style>
   <script>
       window.addEventListener('load', function () {
           document.getElementById('js-fetch-data').addEventListener('click', function (e) {

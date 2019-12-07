@@ -1,10 +1,10 @@
 {
-  "name": "cypress-boilerplate",
+  "name": "cypress-example",
   "version": "1.0.0",
-  "description": "Cypress.js boilerplate",
+  "description": "Cypress.js example",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js",
+    "dev:server": "node index.js",
     "dev:kill": "kill-port --port 8022",
     "cy:open": "cypress open"
   },
